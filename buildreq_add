@@ -7,7 +7,7 @@ unittest2
 testrepository
 Babel
 deprecated-Babel-legacypython
-unittest2-legacypython
+deprecated-unittest2-legacypython
 pbr-legacypython
 deprecated-pytz-legacypython
 setuptools-legacypython

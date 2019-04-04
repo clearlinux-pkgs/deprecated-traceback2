@@ -6,7 +6,7 @@
 #
 Name     : deprecated-traceback2
 Version  : 1.4.0
-Release  : 47
+Release  : 48
 URL      : http://pypi.debian.net/traceback2/traceback2-1.4.0.tar.gz
 Source0  : http://pypi.debian.net/traceback2/traceback2-1.4.0.tar.gz
 Source99 : http://pypi.debian.net/traceback2/traceback2-1.4.0.tar.gz.asc
@@ -21,6 +21,7 @@ BuildRequires : buildreq-distutils3
 BuildRequires : contextlib2
 BuildRequires : deprecated-Babel-legacypython
 BuildRequires : deprecated-pytz-legacypython
+BuildRequires : deprecated-unittest2-legacypython
 BuildRequires : fixtures
 BuildRequires : pbr
 BuildRequires : pbr-legacypython
@@ -28,7 +29,6 @@ BuildRequires : setuptools-legacypython
 BuildRequires : testrepository
 BuildRequires : testtools
 BuildRequires : unittest2
-BuildRequires : unittest2-legacypython
 
 %description
 A backport of traceback to older supported Pythons.
@@ -59,7 +59,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1554329406
+export SOURCE_DATE_EPOCH=1554341976
 export MAKEFLAGS=%{?_smp_mflags}
 python2 setup.py build -b py2
 
